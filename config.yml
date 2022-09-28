@@ -1,0 +1,153 @@
+baseURL: https://piko-heksagon.netlify.app/
+languageCode: ja-jp
+title: ThreeWealth
+theme: piko
+paginate: "9"
+copyright: licensed [MIT](https://opensource.org/licenses/mit-license.php "MIT")
+googleAnalytics: # Enter Google Analytics ie. UA-012345678-9
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+outputs:
+  home:
+  - HTML
+  - RSS
+  - JSON
+minify:
+  disableCSS: false
+  disableHTML: false
+  disableJS: false
+  disableJSON: false
+  disableSVG: false
+  disableXML: false
+  minifyOutput: true
+  tdewolff:
+    html:
+      keepWhitespace: false
+
+params:
+  analytics:
+    google:
+      SiteVerificationTag: # Google Site Verification
+    yandex:
+      SiteVerificationTag: # Yandex Site Verification
+    bing:
+      SiteVerificationTag: # Bing Site Verification
+  env: production
+  author: ThreeWealth
+  description: スリーウェルス合同会社
+  math: false
+  images:
+  - "/uploads/title.jpeg"
+  label:
+    title: " "
+    text: " "
+    icon: /uploads/title.png
+    iconHeight: "300"
+    iconWIdth: "72"
+  comments: false
+  mainSections:
+  - blog
+  ShowShareButtons: false
+  ShowCodeCopyButtons: false
+  ShowRelated: false
+  CookieNotice: " "
+  CookieLink: /legal/privacy/#cookies-and-web-beacons
+  CookieButton: Cookies Policy
+  disableAnchoredHeadings: true
+  contactFormAction: # Get link from https://formsubmit.io or https://fabform.io
+  assets:
+    disableFingerprinting: false
+    favicon: /uploads/favicon.png
+    favicon16x16: /uploads/favicon.png
+    favicon32x32: /uploads/favicon.png
+    apple_touch_icon: /uploads/favicon.png
+    safari_pinned_tab: /uploads/favicon.png
+  ShowReadingTime: false
+  ShowBreadCrumbs: false
+  homepage:
+    # Hero Section
+    disableHeroSection: false
+    heroUpperTitle: 
+    heroTitle: ThreeWealth
+    heroDescription: スリーウェルス合同会社
+    heroCTAPrimaryText: About
+    heroCTAPrimaryUrl: "/about/"
+    heroCTASecondaryText: Contact Me
+    heroCTASecondaryUrl: "/contact/"
+    heroBackgroundImage: "/uploads/top-image.jpeg"
+    # Blog Section
+    disableBlogSection: true
+    blogTitle: Latest Posts
+    blogDescription: This is my latest blog posts
+    seeMoreText: More Posts
+    # About Section
+    disableAboutSection: false
+    aboutTitle: コンセプト
+    aboutDescription: " "
+    aboutImgUrl: "/uploads/TWlogo.png"
+    aboutContent: |
+      面白い、シンプル、親しみやすさ、「WWW」をマーク化<br>
+      構成/マークに込められた意味<br>
+      <br>
+      THREEWEALTH → 3つのW<br>
+      WWW → ネットスラングの「WWW」楽しければいいでしょ!イメージ<br>
+      W.W.W. → ワールドワイドウェブ（インターネット）の意味
+    # Portfolio Section
+    disablePortfolioSection: false
+    portfolioTitle: 販売実績
+    portfolioDescription: 各ショップで商品販売を行なっています
+    portfolio:
+    - imageUrl: /uploads/yahoo.png
+      alt: # image alt for better SEO
+      description: Yahooショッピング販売実績あり
+      websiteUrl: https://store.shopping.yahoo.co.jp/emuzuprimes/
+    - imageUrl: /uploads/amazon.png
+      alt: # image alt for better SEO
+      description: Amazon販売実績あり
+      websiteUrl: https://www.amazon.co.jp/sp?ie=UTF8&seller=A13FHKR6QGTZOB&asin=B093Q2Z8QV&ref_=dp_merchant_link&isAmazonFulfilled=1
+  # Search Options (https://fusejs.io/)
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: "0"
+    distance: "1000"
+    threshold: "0.4"
+    minMatchCharLength: "0"
+    keys:
+    - title
+    - permalink
+    - summary
+    - content
+  plugins:
+    css:
+    - link: plugins/css/pico.min.css
+    js:
+    - link: plugins/js/feather.min.js
+menus:
+  main: # Main Menu
+  - name: About
+    title: About
+    pre: info
+    url: "/about"
+    weight: "30"
+  - name: Contact
+    title: Contact
+    pre: mail
+    url: "/contact"
+    weight: "40"
+  search: # Search page's quick links
+  - name: Categories
+    title: Categories
+    url: "/categories"
+    weight: "10"
+  - name: Archives
+    title: Archives
+    url: "/archives"
+    weight: "20"
+  - name: Tags
+    title: Tags
+    url: "/tags"
+    weight: "30"
