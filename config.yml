@@ -3,7 +3,7 @@ languageCode: ja-jp
 title: ThreeWealth
 theme: piko
 paginate: "9"
-copyright: licensed [MIT](https://opensource.org/licenses/mit-license.php "MIT")
+copyright: #licensed [MIT](https://opensource.org/licenses/mit-license.php "MIT")
 googleAnalytics: # Enter Google Analytics ie. UA-012345678-9
 enableRobotsTXT: true
 buildDrafts: false
