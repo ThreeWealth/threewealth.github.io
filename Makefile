@@ -1,7 +1,7 @@
 # from https://github.com/uqichi/blog/blob/master/Makefile
 POST_DIR    := "content/post"
 FILE_DIR    := `date +'%Y/%m/%d'`
-GITHUB_DIR  := "tmp/fieldside.github.io"
+GITHUB_DIR  := "tmp/threewealth.github.io"
 
 .DEFAULT_GOAL := help
 
@@ -17,7 +17,7 @@ edit: ## Edit specific post
 
 deploy: ## Deploy posts
 	hugo
-	rm -fr tmp && mkdir -p tmp && cd tmp && git clone https://ken-aio@github.com/ThreeWealth/threewealth.github.io.git
+	rm -fr tmp && mkdir -p tmp && cd tmp && git clone github-kenaio:ThreeWealth/threewealth.github.io.git
 	rm -fr $(GITHUB_DIR)/*
 	cp -fr public/* $(GITHUB_DIR)/
 	cd $(GITHUB_DIR)/ && git config --local user.name ken-aio && git config --local user.email suguru.akiho@gmail.com
