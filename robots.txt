@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://threewealth.net/sitemap.xml
+Sitemap: https://threewealth.github.io/sitemap.xml
